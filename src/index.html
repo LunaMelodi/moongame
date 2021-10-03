@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Pixi Hotwire</title>
+    <style>
+      /* Debug canvas:
+      * {
+        border: 4px dashed;
+        mix-blend-mode: difference;
+      } */
+
+      html,
+      body {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+        user-select: none;
+      }
+
+      #pixi-content {
+        background: #000000;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+
+  <body oncontextmenu="return false;">
+    <noscript
+      >Please enable JavaScript in your web browser to view this page.</noscript
+    >
+    <div id="pixi-content"><canvas id="pixi-canvas" /></div>
+  </body>
+  <script defer src="./index.ts"></script>
+</html>
